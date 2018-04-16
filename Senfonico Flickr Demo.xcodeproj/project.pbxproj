@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64448D2AE86C838ABC97812A /* Pods_Senfonico_Flickr_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8F660B63B683ED38D339FC /* Pods_Senfonico_Flickr_Demo.framework */; };
+		6CE9AE11D42927828D98F73A /* Pods_Senfonico_Flickr_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6048CCDCE4B1F6BB31D2944 /* Pods_Senfonico_Flickr_DemoTests.framework */; };
+		7150660A20828D620097F6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150660920828D620097F6E3 /* AppDelegate.swift */; };
+		7150660C20828D620097F6E3 /* FlickrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150660B20828D620097F6E3 /* FlickrViewController.swift */; };
+		7150660F20828D620097F6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7150660D20828D620097F6E3 /* Main.storyboard */; };
+		7150661120828D620097F6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7150661020828D620097F6E3 /* Assets.xcassets */; };
+		7150661420828D620097F6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7150661220828D620097F6E3 /* LaunchScreen.storyboard */; };
+		7150661F20828D620097F6E3 /* Senfonico_Flickr_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150661E20828D620097F6E3 /* Senfonico_Flickr_DemoTests.swift */; };
+		7150662A20828D620097F6E3 /* Senfonico_Flickr_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150662920828D620097F6E3 /* Senfonico_Flickr_DemoUITests.swift */; };
+		7150663B20828E500097F6E3 /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150663A20828E500097F6E3 /* ServiceConnector.swift */; };
+		7150663E208360620097F6E3 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150663D208360620097F6E3 /* Flickr.swift */; };
+		71BE185B20851C9E004A259F /* FlickrCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE185920851C9E004A259F /* FlickrCell.swift */; };
+		71BE185C20851C9E004A259F /* FlickrCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71BE185A20851C9E004A259F /* FlickrCell.xib */; };
+		AFA948435E83B6AFEFA31DFC /* Pods_Senfonico_Flickr_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC33B2CE4E0E7F119AB4D33 /* Pods_Senfonico_Flickr_DemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7150661B20828D620097F6E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715065FE20828D620097F6E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7150660520828D620097F6E3;
+			remoteInfo = "Senfonico Flickr Demo";
+		};
+		7150662620828D620097F6E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 715065FE20828D620097F6E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7150660520828D620097F6E3;
+			remoteInfo = "Senfonico Flickr Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FDFCC149562BD67434785C7 /* Pods-Senfonico Flickr DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr DemoTests/Pods-Senfonico Flickr DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33CFECA02AE648F50FB527CC /* Pods-Senfonico Flickr DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr DemoTests/Pods-Senfonico Flickr DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		475DD3AA687A5CAE65D54292 /* Pods-Senfonico Flickr DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr DemoUITests/Pods-Senfonico Flickr DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		57709502DBFF7B3BED2B202C /* Pods-Senfonico Flickr Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr Demo/Pods-Senfonico Flickr Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		62FDCBB292C282D7A220D80B /* Pods-Senfonico Flickr Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr Demo/Pods-Senfonico Flickr Demo.release.xcconfig"; sourceTree = "<group>"; };
+		7150660620828D620097F6E3 /* Senfonico Flickr Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senfonico Flickr Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7150660920828D620097F6E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7150660B20828D620097F6E3 /* FlickrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrViewController.swift; sourceTree = "<group>"; };
+		7150660E20828D620097F6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7150661020828D620097F6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7150661320828D620097F6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7150661520828D620097F6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7150661A20828D620097F6E3 /* Senfonico Flickr DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senfonico Flickr DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7150661E20828D620097F6E3 /* Senfonico_Flickr_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senfonico_Flickr_DemoTests.swift; sourceTree = "<group>"; };
+		7150662020828D620097F6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7150662520828D620097F6E3 /* Senfonico Flickr DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senfonico Flickr DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7150662920828D620097F6E3 /* Senfonico_Flickr_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senfonico_Flickr_DemoUITests.swift; sourceTree = "<group>"; };
+		7150662B20828D620097F6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7150663A20828E500097F6E3 /* ServiceConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
+		7150663D208360620097F6E3 /* Flickr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
+		71BE185920851C9E004A259F /* FlickrCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrCell.swift; sourceTree = "<group>"; };
+		71BE185A20851C9E004A259F /* FlickrCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickrCell.xib; sourceTree = "<group>"; };
+		7AC33B2CE4E0E7F119AB4D33 /* Pods_Senfonico_Flickr_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Senfonico_Flickr_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B95DFF128A6222332D634FF /* Pods-Senfonico Flickr DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senfonico Flickr DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senfonico Flickr DemoUITests/Pods-Senfonico Flickr DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C8F660B63B683ED38D339FC /* Pods_Senfonico_Flickr_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Senfonico_Flickr_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6048CCDCE4B1F6BB31D2944 /* Pods_Senfonico_Flickr_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Senfonico_Flickr_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7150660320828D620097F6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64448D2AE86C838ABC97812A /* Pods_Senfonico_Flickr_Demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150661720828D620097F6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CE9AE11D42927828D98F73A /* Pods_Senfonico_Flickr_DemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150662220828D620097F6E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA948435E83B6AFEFA31DFC /* Pods_Senfonico_Flickr_DemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63D6DE3EC89876DF6DDAE5AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57709502DBFF7B3BED2B202C /* Pods-Senfonico Flickr Demo.debug.xcconfig */,
+				62FDCBB292C282D7A220D80B /* Pods-Senfonico Flickr Demo.release.xcconfig */,
+				2FDFCC149562BD67434785C7 /* Pods-Senfonico Flickr DemoTests.debug.xcconfig */,
+				33CFECA02AE648F50FB527CC /* Pods-Senfonico Flickr DemoTests.release.xcconfig */,
+				7B95DFF128A6222332D634FF /* Pods-Senfonico Flickr DemoUITests.debug.xcconfig */,
+				475DD3AA687A5CAE65D54292 /* Pods-Senfonico Flickr DemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		715065FD20828D620097F6E3 = {
+			isa = PBXGroup;
+			children = (
+				7150663920828E270097F6E3 /* API */,
+				7150660820828D620097F6E3 /* Senfonico Flickr Demo */,
+				7150661D20828D620097F6E3 /* Senfonico Flickr DemoTests */,
+				7150662820828D620097F6E3 /* Senfonico Flickr DemoUITests */,
+				7150660720828D620097F6E3 /* Products */,
+				63D6DE3EC89876DF6DDAE5AE /* Pods */,
+				E91BF874589518728D79EE70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7150660720828D620097F6E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7150660620828D620097F6E3 /* Senfonico Flickr Demo.app */,
+				7150661A20828D620097F6E3 /* Senfonico Flickr DemoTests.xctest */,
+				7150662520828D620097F6E3 /* Senfonico Flickr DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7150660820828D620097F6E3 /* Senfonico Flickr Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7150661520828D620097F6E3 /* Info.plist */,
+				7150663C208360570097F6E3 /* Model */,
+				71B9E771208537BA00389944 /* Controller */,
+				71BE185820851C79004A259F /* View */,
+				71B9E774208537FB00389944 /* Supporting Files */,
+			);
+			path = "Senfonico Flickr Demo";
+			sourceTree = "<group>";
+		};
+		7150661D20828D620097F6E3 /* Senfonico Flickr DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7150661E20828D620097F6E3 /* Senfonico_Flickr_DemoTests.swift */,
+				7150662020828D620097F6E3 /* Info.plist */,
+			);
+			path = "Senfonico Flickr DemoTests";
+			sourceTree = "<group>";
+		};
+		7150662820828D620097F6E3 /* Senfonico Flickr DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7150662920828D620097F6E3 /* Senfonico_Flickr_DemoUITests.swift */,
+				7150662B20828D620097F6E3 /* Info.plist */,
+			);
+			path = "Senfonico Flickr DemoUITests";
+			sourceTree = "<group>";
+		};
+		7150663920828E270097F6E3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7150663A20828E500097F6E3 /* ServiceConnector.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7150663C208360570097F6E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7150663D208360620097F6E3 /* Flickr.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71B9E771208537BA00389944 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7150660B20828D620097F6E3 /* FlickrViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		71B9E774208537FB00389944 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7150661020828D620097F6E3 /* Assets.xcassets */,
+				7150661220828D620097F6E3 /* LaunchScreen.storyboard */,
+				7150660920828D620097F6E3 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71BE185820851C79004A259F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7150660D20828D620097F6E3 /* Main.storyboard */,
+				71BE185920851C9E004A259F /* FlickrCell.swift */,
+				71BE185A20851C9E004A259F /* FlickrCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E91BF874589518728D79EE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C8F660B63B683ED38D339FC /* Pods_Senfonico_Flickr_Demo.framework */,
+				B6048CCDCE4B1F6BB31D2944 /* Pods_Senfonico_Flickr_DemoTests.framework */,
+				7AC33B2CE4E0E7F119AB4D33 /* Pods_Senfonico_Flickr_DemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7150660520828D620097F6E3 /* Senfonico Flickr Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7150662E20828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr Demo" */;
+			buildPhases = (
+				812DF1E039524AFD3C36A2A4 /* [CP] Check Pods Manifest.lock */,
+				7150660220828D620097F6E3 /* Sources */,
+				7150660320828D620097F6E3 /* Frameworks */,
+				7150660420828D620097F6E3 /* Resources */,
+				25FE4AD66215269017EC36A3 /* [CP] Embed Pods Frameworks */,
+				07C2046F60AAB154B7EB6749 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Senfonico Flickr Demo";
+			productName = "Senfonico Flickr Demo";
+			productReference = 7150660620828D620097F6E3 /* Senfonico Flickr Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7150661920828D620097F6E3 /* Senfonico Flickr DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7150663120828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr DemoTests" */;
+			buildPhases = (
+				BC7968AE73B8FD2E591715CD /* [CP] Check Pods Manifest.lock */,
+				7150661620828D620097F6E3 /* Sources */,
+				7150661720828D620097F6E3 /* Frameworks */,
+				7150661820828D620097F6E3 /* Resources */,
+				4C0241E198702377F2A6DC94 /* [CP] Embed Pods Frameworks */,
+				99C7CD9AC2B56476C18A0AE7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7150661C20828D620097F6E3 /* PBXTargetDependency */,
+			);
+			name = "Senfonico Flickr DemoTests";
+			productName = "Senfonico Flickr DemoTests";
+			productReference = 7150661A20828D620097F6E3 /* Senfonico Flickr DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7150662420828D620097F6E3 /* Senfonico Flickr DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7150663420828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr DemoUITests" */;
+			buildPhases = (
+				96F40B77FD2E8BC552CB81D3 /* [CP] Check Pods Manifest.lock */,
+				7150662120828D620097F6E3 /* Sources */,
+				7150662220828D620097F6E3 /* Frameworks */,
+				7150662320828D620097F6E3 /* Resources */,
+				5D0E0498F4DAAD532AE93A72 /* [CP] Embed Pods Frameworks */,
+				7EB3B62BDD52078CDF5614CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7150662720828D620097F6E3 /* PBXTargetDependency */,
+			);
+			name = "Senfonico Flickr DemoUITests";
+			productName = "Senfonico Flickr DemoUITests";
+			productReference = 7150662520828D620097F6E3 /* Senfonico Flickr DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		715065FE20828D620097F6E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = resoft;
+				TargetAttributes = {
+					7150660520828D620097F6E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7150661920828D620097F6E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7150660520828D620097F6E3;
+					};
+					7150662420828D620097F6E3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7150660520828D620097F6E3;
+					};
+				};
+			};
+			buildConfigurationList = 7150660120828D620097F6E3 /* Build configuration list for PBXProject "Senfonico Flickr Demo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 715065FD20828D620097F6E3;
+			productRefGroup = 7150660720828D620097F6E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7150660520828D620097F6E3 /* Senfonico Flickr Demo */,
+				7150661920828D620097F6E3 /* Senfonico Flickr DemoTests */,
+				7150662420828D620097F6E3 /* Senfonico Flickr DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7150660420828D620097F6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7150661420828D620097F6E3 /* LaunchScreen.storyboard in Resources */,
+				7150661120828D620097F6E3 /* Assets.xcassets in Resources */,
+				71BE185C20851C9E004A259F /* FlickrCell.xib in Resources */,
+				7150660F20828D620097F6E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150661820828D620097F6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150662320828D620097F6E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C2046F60AAB154B7EB6749 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr Demo/Pods-Senfonico Flickr Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25FE4AD66215269017EC36A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr Demo/Pods-Senfonico Flickr Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C0241E198702377F2A6DC94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr DemoTests/Pods-Senfonico Flickr DemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0E0498F4DAAD532AE93A72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr DemoUITests/Pods-Senfonico Flickr DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EB3B62BDD52078CDF5614CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr DemoUITests/Pods-Senfonico Flickr DemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812DF1E039524AFD3C36A2A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96F40B77FD2E8BC552CB81D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99C7CD9AC2B56476C18A0AE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senfonico Flickr DemoTests/Pods-Senfonico Flickr DemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC7968AE73B8FD2E591715CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7150660220828D620097F6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7150663B20828E500097F6E3 /* ServiceConnector.swift in Sources */,
+				7150660C20828D620097F6E3 /* FlickrViewController.swift in Sources */,
+				7150663E208360620097F6E3 /* Flickr.swift in Sources */,
+				7150660A20828D620097F6E3 /* AppDelegate.swift in Sources */,
+				71BE185B20851C9E004A259F /* FlickrCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150661620828D620097F6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7150661F20828D620097F6E3 /* Senfonico_Flickr_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7150662120828D620097F6E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7150662A20828D620097F6E3 /* Senfonico_Flickr_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7150661C20828D620097F6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7150660520828D620097F6E3 /* Senfonico Flickr Demo */;
+			targetProxy = 7150661B20828D620097F6E3 /* PBXContainerItemProxy */;
+		};
+		7150662720828D620097F6E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7150660520828D620097F6E3 /* Senfonico Flickr Demo */;
+			targetProxy = 7150662620828D620097F6E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7150660D20828D620097F6E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7150660E20828D620097F6E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7150661220828D620097F6E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7150661320828D620097F6E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7150662C20828D620097F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7150662D20828D620097F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7150662F20828D620097F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57709502DBFF7B3BED2B202C /* Pods-Senfonico Flickr Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7150663020828D620097F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FDCBB292C282D7A220D80B /* Pods-Senfonico Flickr Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7150663220828D620097F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FDFCC149562BD67434785C7 /* Pods-Senfonico Flickr DemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senfonico Flickr Demo.app/Senfonico Flickr Demo";
+			};
+			name = Debug;
+		};
+		7150663320828D620097F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33CFECA02AE648F50FB527CC /* Pods-Senfonico Flickr DemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senfonico Flickr Demo.app/Senfonico Flickr Demo";
+			};
+			name = Release;
+		};
+		7150663520828D620097F6E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B95DFF128A6222332D634FF /* Pods-Senfonico Flickr DemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Senfonico Flickr Demo";
+			};
+			name = Debug;
+		};
+		7150663620828D620097F6E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475DD3AA687A5CAE65D54292 /* Pods-Senfonico Flickr DemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4W5TXF9ZA;
+				INFOPLIST_FILE = "Senfonico Flickr DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "resoft.Senfonico-Flickr-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Senfonico Flickr Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7150660120828D620097F6E3 /* Build configuration list for PBXProject "Senfonico Flickr Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7150662C20828D620097F6E3 /* Debug */,
+				7150662D20828D620097F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7150662E20828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7150662F20828D620097F6E3 /* Debug */,
+				7150663020828D620097F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7150663120828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7150663220828D620097F6E3 /* Debug */,
+				7150663320828D620097F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7150663420828D620097F6E3 /* Build configuration list for PBXNativeTarget "Senfonico Flickr DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7150663520828D620097F6E3 /* Debug */,
+				7150663620828D620097F6E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 715065FE20828D620097F6E3 /* Project object */;
+}
